@@ -77,6 +77,19 @@
                 <visible>false</visible>
             </control>
 
+            <control type="image" id="4603">
+                <description>background mask</description>
+                <posx>0</posx>
+                <posy>-2</posy>
+                <width>1280</width>
+                <height>452</height>
+                <texture>black.png</texture>
+                <visible>!Player.HasMedia</visible>
+                <aspectratio>scale</aspectratio>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+
             <control type="image" id="4600">
                 <description>background</description>
                 <posx>0</posx>
@@ -217,7 +230,7 @@
                     <aligny>center</aligny>
                     <visible>false</visible>
                 </control>
-                
+
                 <control type="label">
                     <description>Displays todays date</description>
                     <posx>5r</posx>
@@ -232,7 +245,7 @@
                     <visible>true</visible>
                     <label>$INFO[System.Date]</label>
                 </control>
-                
+
                 <control type="label">
                     <description>time label</description>
                     <right>20</right>
@@ -316,9 +329,9 @@
                 <control type="image" id="4210">
                     <description>1st channel</description>
                     <posx>2</posx>
-                    <posy>0</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4010)|Control.IsVisible(4110)</visible>
                     <align>center</align>
@@ -328,9 +341,9 @@
                 <control type="image" id="4211">
                     <description>2nd channel</description>
                     <posx>2</posx>
-                    <posy>40</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4011)|Control.IsVisible(4111)</visible>
                     <align>center</align>
@@ -340,9 +353,9 @@
                 <control type="image" id="4212">
                     <description>3rd channel</description>
                     <posx>2</posx>
-                    <posy>80</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4012)|Control.IsVisible(4112)</visible>
                     <align>center</align>
@@ -352,9 +365,9 @@
                 <control type="image" id="4213">
                     <description>4th channel</description>
                     <posx>2</posx>
-                    <posy>120</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4013)|Control.IsVisible(4113)</visible>
                     <align>center</align>
@@ -364,9 +377,9 @@
                 <control type="image" id="4214">
                     <description>5th channel</description>
                     <posx>2</posx>
-                    <posy>160</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4014)|Control.IsVisible(4114)</visible>
                     <align>center</align>
@@ -376,9 +389,9 @@
                 <control type="image" id="4215">
                     <description>6th channel</description>
                     <posx>2</posx>
-                    <posy>200</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4015)|Control.IsVisible(4115)</visible>
                     <align>center</align>
@@ -388,9 +401,9 @@
                 <control type="image" id="4216">
                     <description>7th channel</description>
                     <posx>2</posx>
-                    <posy>240</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4016)|Control.IsVisible(4116)</visible>
                     <align>center</align>
@@ -400,9 +413,9 @@
                 <control type="image" id="4217">
                     <description>8th channel</description>
                     <posx>2</posx>
-                    <posy>280</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4017)|Control.IsVisible(4117)</visible>
                     <align>center</align>
@@ -412,9 +425,9 @@
                 <control type="image" id="4218">
                     <description>9th channel</description>
                     <posx>2</posx>
-                    <posy>320</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4018)|Control.IsVisible(4118)</visible>
                     <align>center</align>
@@ -424,9 +437,9 @@
                 <control type="image" id="4219">
                     <description>10 channel</description>
                     <posx>2</posx>
-                    <posy>360</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4019)|Control.IsVisible(4119)</visible>
                     <align>center</align>
@@ -436,9 +449,9 @@
                 <control type="image" id="4220">
                     <description>11 channel</description>
                     <posx>2</posx>
-                    <posy>400</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4020)|Control.IsVisible(4120)</visible>
                     <align>center</align>
@@ -448,9 +461,9 @@
                 <control type="image" id="4221">
                     <description>12 channel</description>
                     <posx>2</posx>
-                    <posy>440</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4021)|Control.IsVisible(4121)</visible>
                     <align>center</align>
@@ -460,9 +473,9 @@
                 <control type="image" id="4222">
                     <description>13 channel</description>
                     <posx>2</posx>
-                    <posy>480</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4022)|Control.IsVisible(4122)</visible>
                     <align>center</align>
@@ -472,9 +485,9 @@
                 <control type="image" id="4223">
                     <description>14th channel</description>
                     <posx>2</posx>
-                    <posy>520</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4023)|Control.IsVisible(4123)</visible>
                     <align>center</align>
@@ -484,9 +497,9 @@
                 <control type="image" id="4224">
                     <description>15th channel</description>
                     <posx>2</posx>
-                    <posy>560</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4024)|Control.IsVisible(4124)</visible>
                     <align>center</align>
@@ -496,9 +509,9 @@
                 <control type="image" id="4225">
                     <description>16th channel</description>
                     <posx>2</posx>
-                    <posy>600</posy>
+                    <posy>-100</posy>
                     <width>176</width>
-                    <height>40</height>
+                    <height>1</height>
                     <aspectratio>stretch</aspectratio>
                     <visible>Control.IsVisible(4025)|Control.IsVisible(4125)</visible>
                     <align>center</align>
@@ -1193,6 +1206,7 @@
             </control>
 
         </control>
+
         <!-- id="5000" -->
 
 

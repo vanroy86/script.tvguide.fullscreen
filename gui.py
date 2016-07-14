@@ -694,6 +694,7 @@ class TVGuide(xbmcgui.WindowXML):
         self.setFocusId(self.C_MAIN_LOADING_CANCEL)
 
         # remove existing controls
+        self.setControlImage(self.C_MAIN_BACKGROUND, "black-back.png")
         self._clearEpg()
 
         try:
@@ -854,8 +855,6 @@ class TVGuide(xbmcgui.WindowXML):
 
         if focusControl is None and len(self.controlAndProgramList) > 0:
             self.setFocus(self.controlAndProgramList[0].control)
-
-
 
         self._hideControl(self.C_MAIN_LOADING)
         self.redrawingEPG = False
