@@ -129,11 +129,12 @@ class StreamsService(object):
                         if re.match(titleRe,labelnum):
                             numword_matches.append((id, label, stream))
 
-        exact_matches = set(exact_matches)
-        sorted_exact_matches = sorted(exact_matches, key=lambda match: match[1])
+        sorted_exact_matches = exact_matches
+        #exact_matches = set(exact_matches)
+        #sorted_exact_matches = sorted(exact_matches, key=lambda match: match[1])
         sub_matches = set(sub_matches) - set(exact_matches)
         sorted_sub_matches = sorted(sub_matches, key=lambda match: match[1])
-        numword_matches = set(numword_matches) - set(sub_matches) - exact_matches
+        numword_matches = set(numword_matches) - set(sub_matches) - set(exact_matches)
         sorted_numword_matches = sorted(numword_matches, key=lambda match: match[1])
         matches = sorted_exact_matches
         if int(self.addon.getSetting('addon.match')) > 0:
