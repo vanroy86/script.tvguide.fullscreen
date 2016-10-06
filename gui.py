@@ -2675,6 +2675,7 @@ class StreamSetupDialog(xbmcgui.WindowXMLDialog):
     C_STREAM_STRM_CANCEL = 1004
     C_STREAM_STRM_IMPORT = 1006
     C_STREAM_STRM_PVR = 1007
+    C_STREAM_STRM_STREAM = 1010
     C_STREAM_FAVOURITES = 2001
     C_STREAM_FAVOURITES_PREVIEW = 2002
     C_STREAM_FAVOURITES_OK = 2003
@@ -2782,6 +2783,8 @@ class StreamSetupDialog(xbmcgui.WindowXMLDialog):
         if self.channel.logo:
             self.getControl(self.C_STREAM_CHANNEL_LOGO).setImage(self.channel.logo)
 
+        url = self.database.getStreamUrl(self.channel)
+        self.getControl(self.C_STREAM_STRM_STREAM).setLabel(url)
 
     def onAction(self, action):
         if action.getId() in [ACTION_PARENT_DIR, ACTION_PREVIOUS_MENU, KEY_NAV_BACK, KEY_CONTEXT_MENU]:

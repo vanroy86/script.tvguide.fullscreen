@@ -226,7 +226,7 @@
             <visible>StringCompare(Control.GetLabel(100),strm)</visible>
 
             <control type="textbox">
-                <posx>140</posx>
+                <posx>300</posx>
                 <posy>60</posy>
                 <width>560</width>
                 <height>80</height>
@@ -295,12 +295,25 @@
             </control>
 
             <control type="textbox" id="1005">
-                <posx>140</posx>
+                <description>strm substream</description>
+                <posx>300</posx>
                 <posy>240</posy>
                 <width>1280</width>
                 <height>80</height>
                 <wrapmultiline>true</wrapmultiline>
+                <textcolor>white</textcolor>
+            </control>
 
+            <control type="label" id="1010">
+                <description>current stream</description>
+                <posx>20</posx>
+                <posy>480</posy>
+                <width>1240</width>
+                <height>80</height>
+                <font>font10</font>
+                <textcolor>white</textcolor>
+                <scroll>false</scroll>
+                <textcolor>white</textcolor>
             </control>
 
 
